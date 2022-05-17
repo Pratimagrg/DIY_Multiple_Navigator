@@ -17,12 +17,17 @@ class TabNavigator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     late Widget child;
-    if (tabItem == "Page1")
-      child = Page1();
-    else if (tabItem == "Page2")
-      child = Page2();
-    else if (tabItem == "Page3") child = Page3();
-
+    if (tabItem == "Page1") {
+      child = const Page1();
+    } else if (tabItem == "Page2") {
+      child = const Page2();
+    } else if (tabItem == "Page3") {
+      child = const Page3();
+    } else if (tabItem == "Page4") {
+      child = const Page2();
+    } else if (tabItem == "Page5") {
+      child = const Page1();
+    }
     return Navigator(
       key: navigatorKey,
       onGenerateRoute: (routeSettings) {
